@@ -142,7 +142,7 @@ TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API :=true
 TARGET_USES_QCOM_BSP := true
 
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
+#TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
 #TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
@@ -155,7 +155,7 @@ TARGET_LDPRELOAD := libNimsWrap.so
 TARGET_PER_MGR_ENABLED := true
 
 #Enable HW based full disk encryption
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
 
 # Enable sensor multi HAL
 USE_SENSOR_MULTI_HAL := true
@@ -172,7 +172,7 @@ BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 3
 #Add by tansen for Widevine fuction 20160408 SW00186672 end
 
 # SELinux policies
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 
 #Wifi
 BOARD_WLAN_DEVICE                := qcwcn
