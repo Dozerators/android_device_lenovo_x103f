@@ -18,12 +18,10 @@
 FORCE_32_BIT := true
 
 # Inherit from msm8909-common
-include device/cyanogen/msm8909-common/BoardConfigCommon.mk
+include device/lineage/msm8909-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/lenovo/x103f
 
-# Assertions
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -49,6 +47,8 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
+TARGET_KERNEL_SOURCE := kernel/lenovo/msm8909
 TARGET_KERNEL_CONFIG := lineageos_x103f_defconfig
 
 # Power
