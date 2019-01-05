@@ -16,7 +16,7 @@
 #
 
 # Inherit from msm8909-common
-$(call inherit-product, device/cyanogen/msm8909-common/msm8909.mk)
+$(call inherit-product, device/lineage/msm8909-common/msm8909.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
